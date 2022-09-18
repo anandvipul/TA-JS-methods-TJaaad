@@ -25,16 +25,20 @@ console.log(`The index of first is in quote is 7 is ${quote.charAt(7)}`);
   The character at index 4 is 'e'
   The character at index 5 is ' '
 */
-
+for (let i = 0; i <= 5; i++) {
+  console.log(`The character at index ${i} is ${quote.charAt(i)}`);
+}
 /*
 5. Using the variable from , to and quote variable dispaly this message
   "Syrio Forel said There is only one thing we say to death: Not today to Arya Stark." (use concat method)
 */
-
+console.log(`${from} said ${quote} to ${to}`);
 /*
 6. Does from, to and quote ends with "rk". Check all three.
 */
-
+console.log(from.endsWith("rk"));
+console.log(quote.endsWith("rk"));
+console.log(to.endsWith("rk"));
 /*
 7. Does quote includes the word "Only"
 */
@@ -92,7 +96,7 @@ Store the output in a new variable
 /*
 20. Make the quote of length 30 and put ... at the end. (use slice)
 */
-
+quote = quote.padEnd(30, ".");
 /*
 21. Find out does quote, from, to starts with "A"
 */
