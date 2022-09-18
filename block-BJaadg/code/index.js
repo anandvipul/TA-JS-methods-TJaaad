@@ -42,27 +42,27 @@ console.log(to.endsWith("rk"));
 /*
 7. Does quote includes the word "Only"
 */
-
+console.log(quote.includes("Only"));
 /*
 8. Does quote includes the word " we"
 */
-
+console.log(quote.includes("we"));
 /*
 9. Find the index of the the word `we` in quote
 */
-
+console.log(quote.indexOf("we"));
 /*
 10. Split the quote into individual word and store it in a variable name quoteSplitted
 */
-
+let quoteSplitted = quote.split(" ");
 /*
 11. Change the word "today" in quoteSplitted to "tomorrow" and join all the words to form a sentance.
 */
-
+quoteSplitted.join("").replace("today", "tomorrow");
 /*
 12. Find the index of second "o" in quote. Use indexOf
 */
-
+quote.indexOf("o", quote.indexOf("o") + 1);
 /*
 13. Find the last index of letter "a" in quote.
 */
