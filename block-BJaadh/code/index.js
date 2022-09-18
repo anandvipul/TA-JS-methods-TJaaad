@@ -1,6 +1,6 @@
 // Use the below two arrays and practice array methods
 var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6, 9];
-var strings = ['This', 'is', 'a', 'collection', 'of', 'words'];
+var strings = ["This", "is", "a", "collection", "of", "words"];
 
 /*
 NOTE:
@@ -11,6 +11,7 @@ Clone the array before using sort method: [...arr]
 */
 
 // - Find the index of `101` in numbers
+console.log(numbers.indexOf(101));
 
 // - Find the last index of `9` in numbers
 
@@ -54,10 +55,10 @@ Clone the array before using sort method: [...arr]
 
 // - Customers Array
 var customers = [
-  { firstname: 'Joe', lastname: 'Blogs' },
-  { firstname: 'John', lastname: 'Smith' },
-  { firstname: 'Dave', lastname: 'Jones' },
-  { firstname: 'Jack', lastname: 'White' },
+  { firstname: "Joe", lastname: "Blogs" },
+  { firstname: "John", lastname: "Smith" },
+  { firstname: "Dave", lastname: "Jones" },
+  { firstname: "Jack", lastname: "White" },
 ];
 // - Find all customers whose firstname starts with 'J'
 
