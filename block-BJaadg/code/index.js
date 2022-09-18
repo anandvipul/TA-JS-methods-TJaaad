@@ -11,11 +11,11 @@ let indexOfIs = quote.indexOf("is");
 /*
 2. Find the character at the index indexOfIs (Problem 1) in quote.
 */
-
+quote.charAt(6);
 /*
 3. Log the message saying `The index of first is in quote is 7`
 */
-
+console.log(`The index of first is in quote is 7 is ${quote.charAt(7)}`);
 /*
 4. Log the message for first 6 characters of quote like this.
   The character at index 0 is 'T'
@@ -96,3 +96,4 @@ Store the output in a new variable
 /*
 21. Find out does quote, from, to starts with "A"
 */
+to.startsWith("A") ? console.log(true) : console.log(false);
