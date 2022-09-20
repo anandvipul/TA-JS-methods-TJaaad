@@ -2,9 +2,10 @@
 
 function countAllPeople() {
   // your code goes here
-  return `${got.houses.reduce(
-    (elem, currElem) => elem.people.length + currElem.people.length
-  )}`;
+  return `${got.houses.reduce((elem, currElem) => {
+    elem = elem + currElem.people.length;
+    return elem;
+  }, 0)}`;
 }
 
 function peopleByHouses() {
