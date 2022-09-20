@@ -11,6 +11,9 @@ function countAllPeople() {
 
 function peopleByHouses() {
   // your code goes here
+  for (let house of got.houses) {
+    console.log(`${house.name} : ${house.people.length} People`);
+  }
 }
 
 function everyone() {
