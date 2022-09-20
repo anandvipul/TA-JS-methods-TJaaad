@@ -1,26 +1,33 @@
 let persons = [
-  { name: 'John', grade: 8, sex: 'M' },
-  { name: 'Sarah', grade: 12, sex: 'F' },
-  { name: 'Bob', grade: 16, sex: 'M' },
-  { name: 'Johnny', grade: 2, sex: 'M' },
-  { name: 'Ethan', grade: 4, sex: 'M' },
-  { name: 'Paula', grade: 18, sex: 'F' },
-  { name: 'Donald', grade: 5, sex: 'M' },
-  { name: 'Jennifer', grade: 13, sex: 'F' },
-  { name: 'Courtney', grade: 15, sex: 'F' },
-  { name: 'Jane', grade: 9, sex: 'F' },
-  { name: 'John', grade: 17, sex: 'M' },
-  { name: 'Arya', grade: 14, sex: 'F' },
+  { name: "John", grade: 8, sex: "M" },
+  { name: "Sarah", grade: 12, sex: "F" },
+  { name: "Bob", grade: 16, sex: "M" },
+  { name: "Johnny", grade: 2, sex: "M" },
+  { name: "Ethan", grade: 4, sex: "M" },
+  { name: "Paula", grade: 18, sex: "F" },
+  { name: "Donald", grade: 5, sex: "M" },
+  { name: "Jennifer", grade: 13, sex: "F" },
+  { name: "Courtney", grade: 15, sex: "F" },
+  { name: "Jane", grade: 9, sex: "F" },
+  { name: "John", grade: 17, sex: "M" },
+  { name: "Arya", grade: 14, sex: "F" },
 ];
 
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
+var arr = [];
+persons.forEach((elem) => arr.push(elem["grade"]));
+average = arr.reduce((elem, current) => elem + current, 0) / arr.length;
 
 // Find the average grade of male
-
+var arr = [];
+persons.forEach((elem) => (elem["sex"] == "M" ? arr.push(elem["grade"]) : {}));
+average = arr.reduce((elem, current) => elem + current, 0) / arr.length;
 // Find the average grade of female
-
+var arr = [];
+persons.forEach((elem) => (elem["sex"] == "F" ? arr.push(elem["grade"]) : {}));
+average = arr.reduce((elem, current) => elem + current, 0) / arr.length;
 // Find the highest grade
 
 // Find the highest grade in male
@@ -30,17 +37,17 @@ let persons = [
 // Find the highest grade for people whose name starts with 'J' or 'P'
 
 const fruitBasket = [
-  'banana',
-  'cherry',
-  'orange',
-  'apple',
-  'cherry',
-  'orange',
-  'apple',
-  'banana',
-  'cherry',
-  'orange',
-  'fig',
+  "banana",
+  "cherry",
+  "orange",
+  "apple",
+  "cherry",
+  "orange",
+  "apple",
+  "banana",
+  "cherry",
+  "orange",
+  "fig",
 ];
 
 /* 
